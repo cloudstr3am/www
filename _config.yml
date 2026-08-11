@@ -43,7 +43,7 @@ rss:
     url: https://rethinkdb.com
 
 # GitHub settings
-repository: midsomarinc/www
+repository: cloudstr3am/www
 
 github:
     source:
