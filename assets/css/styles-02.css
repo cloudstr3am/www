@@ -3741,7 +3741,7 @@ body.about .site-nav a.logo, body.community .site-nav a.logo {
   padding-right: 2rem; }
 
 @media screen and (max-width: 45rem) {
-  /* --- nav: sit in-flow with a solid bar and stacked links --- */
+  /* --- nav: solid in-flow bar, hamburger toggle for the links --- */
   body.landing .site-nav {
     position: static;
     background: #214753;
@@ -3755,20 +3755,35 @@ body.about .site-nav a.logo, body.community .site-nav a.logo {
     padding-right: 0; }
   body.landing .site-nav ul {
     float: none;
-    width: auto;
+    width: 100%;
     margin-right: 0;
     text-align: left; }
   body.landing .site-nav li {
+    display: none; }
+  body.landing .site-nav li.menu-trigger {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    text-indent: 0;
+    line-height: 2.8rem; }
+  body.landing .site-nav li.menu-trigger a {
+    display: block;
+    padding: 0.4rem 0.6rem 0.4rem 1.2rem; }
+  body.landing .site-nav .menu-trigger-icon {
+    opacity: 1;
+    width: 2.2rem;
+    height: 2.2rem;
+    vertical-align: middle; }
+  body.landing .site-nav.open li:not(.menu-trigger) {
     display: block;
     margin: 0;
     padding: 1.1rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.14);
     font-size: 1.7rem;
     line-height: 2.4rem; }
-  body.landing .site-nav li a {
+  body.landing .site-nav.open li:not(.menu-trigger) a {
     display: block; }
-  body.landing .site-nav li.menu-trigger {
-    display: none; }
   body.landing .landing .hero-wrapper {
     padding-top: 5rem; }
 

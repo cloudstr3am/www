@@ -247,6 +247,20 @@ $(function(){
             $status.text("Something went wrong — please email team@midsomar.com and we'll start your audit manually.").removeAttr('hidden');
         });
     });
+
+    var $siteNav = $('.site-nav');
+    $siteNav.find('.menu-trigger')
+        .attr('aria-haspopup', 'true')
+        .attr('aria-expanded', 'false');
+    $siteNav.find('.menu-trigger').on('click', function(event){
+        event.preventDefault();
+        var open = $siteNav.hasClass('open');
+        $siteNav.toggleClass('open');
+        $siteNav.find('.menu-trigger').attr('aria-expanded', open ? 'false' : 'true');
+    });
+    $siteNav.on('click', 'li:not(.menu-trigger) a', function(){
+        $siteNav.removeClass('open').find('.menu-trigger').attr('aria-expanded', 'false');
+    });
 });
 </script>
 
