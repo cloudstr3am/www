@@ -3715,3 +3715,180 @@ body.landing .landing .hero-wrapper:before {
     line-height: 2.16rem;
     margin: 0 1rem 1.3333333333rem;
     padding: 0.6rem 1.6rem; }
+
+/* ==========================================================================
+   Midsomar landing: mobile responsiveness
+   Overrides below keep the page usable from 320px phones up to ~720px
+   (the existing breakpoints). Desktop styles above are untouched.
+
+   NOTE: the original brand relied on assets/images/logo.png, which is no
+   longer shipped, so the brand link is reset to rendered text at all sizes.
+   ========================================================================== */
+
+/* --- navbar brand: show the wordmark text (logo image removed) --- */
+.site-nav a.logo, .sub-nav a.logo, body.landing .site-nav a.logo,
+body.about .site-nav a.logo, body.community .site-nav a.logo {
+  text-indent: 0;
+  background: none;
+  color: #FBFBF9;
+  font-family: "freight-sans-pro-n6", "freight-sans-pro", "FreightSansBold";
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  max-height: none;
+  margin-top: 0;
+  width: auto;
+  padding-right: 2rem; }
+
+@media screen and (max-width: 45rem) {
+  /* --- nav: show the links stacked under the brand instead of hiding them --- */
+  .site-nav a.logo, .sub-nav a.logo, body.landing .site-nav a.logo,
+  body.about .site-nav a.logo, body.community .site-nav a.logo {
+    float: none;
+    display: block; }
+  body.landing .site-nav ul {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    text-align: left; }
+  body.landing .site-nav li {
+    display: block;
+    margin: 0.6rem 0 0;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  body.landing .site-nav li.menu-trigger {
+    display: none; }
+
+  /* --- hero --- */
+  .landing .hero {
+    padding-top: 3.5rem; }
+  .landing .hero h1 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    max-width: 92%; }
+  .landing .hero .hero-install {
+    padding: 4rem 0 2rem; }
+  .landing .hero .hero-install a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto 1.5rem;
+    padding: 1.4rem 2rem; }
+  .landing .hero .hero-install a:last-child {
+    margin-bottom: 0; }
+
+  /* --- intro --- */
+  .landing .intro {
+    padding-top: 5rem; }
+  .landing .intro .intro-content h1 {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 2rem; }
+  .landing .intro .intro-content p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-bottom: 2rem; }
+
+  /* --- what we own --- */
+  .landing .feature.modern-stacks {
+    padding-top: 4rem; }
+  .landing .feature.modern-stacks .feature-content {
+    padding-top: 3rem; }
+  .landing .feature.modern-stacks article {
+    height: auto;
+    margin-bottom: 3.5rem;
+    padding-bottom: 1rem; }
+  .landing .feature.modern-stacks article img {
+    margin-top: 2rem; }
+  .landing .feature.modern-stacks article:nth-child(1) img,
+  .landing .feature.modern-stacks article:nth-child(2) img,
+  .landing .feature.modern-stacks article:nth-child(3) img,
+  .landing .feature.modern-stacks article:nth-child(4) img {
+    width: auto;
+    margin-left: 0; }
+
+  /* --- compare table: scroll horizontally on small screens --- */
+  .landing .comparison {
+    padding: 5rem 0 6rem; }
+  .landing .comparison h1 {
+    font-size: 2.6rem;
+    line-height: 3.6rem; }
+  .landing .comparison .site-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+  .landing .comparison .comparison-sub {
+    font-size: 1.7rem;
+    line-height: 2.6rem; }
+  .landing .comparison table.compare {
+    min-width: 44rem; }
+  .landing .comparison table.compare th,
+  .landing .comparison table.compare td {
+    padding: 1.1rem 0.8rem;
+    font-size: 1.4rem;
+    line-height: 2rem; }
+
+  /* --- value section --- */
+  .landing .feature .feature-content-two {
+    padding: 0; }
+  .landing .feature .value-card {
+    margin: 3rem 0 0; }
+
+  /* --- audit callout --- */
+  .landing .get-started.callout {
+    padding: 5rem 0; }
+  .landing .get-started.callout h1 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    margin-bottom: 3rem; }
+  .landing .get-started.callout .sub {
+    font-size: 1.7rem;
+    line-height: 2.6rem; }
+  .landing .get-started.callout .lead {
+    font-size: 2rem;
+    line-height: 3rem; }
+  .landing .get-started.callout .docs-audit input[type="url"] {
+    font-size: 1.75rem;
+    padding: 1.5rem 1.4rem; }
+  .landing .get-started.callout .docs-audit .button {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .landing .get-started.callout .note {
+    font-size: 1.5rem;
+    line-height: 2.3rem; }
+  .landing .get-started.callout .audit-check {
+    margin-top: 2.5rem; }
+  .landing .get-started.callout .audit-check li {
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    padding: 0.6rem 1.4rem; }
+
+  /* --- footer --- */
+  .site-footer {
+    padding-bottom: 4rem; }
+  .site-footer .get-started {
+    padding-top: 2.5rem; }
+  .site-footer .get-started .button {
+    display: block;
+    width: 100%;
+    max-width: 28rem;
+    margin: 0.6rem 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .site-footer p.github-footer {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding-left: 0; }
+  .site-footer .footer-links {
+    margin-top: 2.5rem; }
+}
+
+@media screen and (max-width: 30rem) {
+  .landing .hero h1 {
+    font-size: 2.9rem;
+    line-height: 3.9rem; } }
