@@ -43,6 +43,8 @@ rss:
     url: https://rethinkdb.com
 
 # GitHub settings
+repository: midsomarinc/www
+
 github:
     source:
         branch: master
