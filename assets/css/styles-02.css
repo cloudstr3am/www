@@ -3717,6 +3717,110 @@ body.landing .landing .hero-wrapper:before {
     padding: 0.6rem 1.6rem; }
 
 /* ==========================================================================
+   Midsomar landing: new sections (revamped content)
+   ========================================================================== */
+
+/* --- hero subtitle --- */
+.landing .hero .hero-sub {
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 72rem;
+  margin: 3rem auto 0;
+  opacity: 0.9; }
+
+/* --- nav CTA button --- */
+.site-nav .nav-cta {
+  margin-left: 2rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  vertical-align: middle; }
+
+/* --- model fleet section --- */
+.landing .model-fleet {
+  background: #f7f7f3;
+  padding: 10rem 0; }
+  .landing .model-fleet h1 {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .landing .model-fleet .model-fleet-sub {
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 72rem;
+    text-align: center;
+    margin: 0 auto 6rem; }
+  .landing .model-fleet .model-fleet-grid {
+    max-width: 96rem;
+    margin: 0 auto; }
+  .landing .model-fleet .model-fleet-card {
+    background: white;
+    border: 1px solid #e0e6e6;
+    border-radius: 6px;
+    padding: 3rem;
+    margin-bottom: 2rem; }
+    .landing .model-fleet .model-fleet-card h3 {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      font-family: "freight-sans-pro-n6", "freight-sans-pro", "FreightSansBold";
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: #214753; }
+    .landing .model-fleet .model-fleet-card p {
+      font-size: 1.7rem;
+      line-height: 2.6rem;
+      margin: 0;
+      color: #375a66; }
+  .landing .model-fleet .model-fleet-closing {
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 72rem;
+    text-align: center;
+    margin: 5rem auto 0; }
+
+/* --- model fleet grid: 3-col on wide screens --- */
+@media screen and (min-width: 45rem) {
+  .landing .model-fleet .model-fleet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }
+  .landing .model-fleet .model-fleet-card {
+    flex: 1 1 calc(33.333% - 1.34rem);
+    margin-bottom: 0; } }
+
+/* --- mobile overrides for new sections --- */
+@media screen and (max-width: 45rem) {
+  .landing .hero .hero-sub {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    margin-top: 2rem; }
+  .site-nav .nav-cta {
+    display: block;
+    margin: 1rem 0 0;
+    text-align: center; }
+  .landing .model-fleet {
+    padding: 5rem 0; }
+  .landing .model-fleet h1 {
+    font-size: 2.6rem;
+    line-height: 3.6rem; }
+  .landing .model-fleet .model-fleet-sub {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    margin-bottom: 4rem; }
+  .landing .model-fleet .model-fleet-card {
+    padding: 2rem; }
+  .landing .model-fleet .model-fleet-card h3 {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  .landing .model-fleet .model-fleet-card p {
+    font-size: 1.5rem;
+    line-height: 2.3rem; }
+  .landing .model-fleet .model-fleet-closing {
+    font-size: 1.7rem;
+    line-height: 2.6rem; }
+  .landing .model-fleet .model-fleet-grid {
+    display: block; } }
+
+/* ==========================================================================
    Midsomar landing: mobile responsiveness
    Overrides below keep the page usable from 320px phones up to ~720px
    (the existing breakpoints). Desktop styles above are untouched.
